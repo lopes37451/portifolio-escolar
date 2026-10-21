@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio pessoal e escolar de desenvolvimento web e programação. Projetos, habilidades e formas de contato." />
+  <meta name="author" content="Estudante de Programação" />
+  <title>Portfólio Pessoal | Trabalho Escolar de Programação</title>
+  
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- Favicon com SVG inline moderno -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+
+  <!-- =====================================================================
+       CABEÇALHO & NAVEGAÇÃO
+       ===================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Voltar ao início">
+        <span class="logo-dot"></span>
+        <!-- [DICA PARA O ALUNO]: Você pode personalizar o nome do seu logotipo abaixo -->
+        <span>Dev<span class="text-gradient">Estudante</span>.</span>
+      </a>
+
+      <!-- Menu Principal -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botões de Ação do Cabeçalho -->
+      <div class="nav-actions">
+        <!-- Alternador de Tema Escuro / Claro -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Alternar tema claro e escuro" title="Alternar Modo Escuro / Claro">
+          <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Botão Hambúrguer Mobile -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       CONTEÚDO PRINCIPAL
+       ===================================================================== -->
+  <main>
+
+    <!-- 1. SEÇÃO HERO (APRESENTAÇÃO INICIAL) -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="status-indicator"></span>
+            <span>Estudante • Aprendendo Programação</span>
+          </div>
+
+          <!-- [DICA PARA O ALUNO]: Altere aqui o seu nome no título abaixo -->
+          <h1 class="hero-title">
+            Olá! Eu sou <br />
+            <span class="text-gradient">Seu Nome Aqui</span>
+          </h1>
+
+          <!-- [DICA PARA O ALUNO]: Ajuste o texto abaixo falando sobre sua escola ou objetivo -->
+          <p class="hero-description">
+            Bem-vindo ao meu portfólio desenvolvido como trabalho escolar de Tecnologia. 
+            Sou apaixonado por inovação, lógica e por construir páginas modernas e acessíveis na web.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projetos" class="btn btn-primary">
+              <span>Explorar Projetos</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#contato" class="btn btn-secondary">
+              <span>Falar Comigo</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cartão Visual do Avatar com Badges -->
+        <div class="hero-image-wrapper">
+          <div class="hero-avatar-card">
+            <!-- [DICA PARA O ALUNO]: Você pode trocar a imagem do arquivo 'assets/avatar.jpg' por sua própria foto! -->
+            <img src="assets/avatar.jpg" alt="Ilustração moderna do estudante" class="hero-avatar-img" />
+          </div>
+
+          <!-- Badges flutuantes -->
+          <div class="floating-badge badge-top-right">
+            <span>💻</span>
+            <span>Front-end Iniciante</span>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <span>🚀</span>
+            <span>Trabalho Escolar 2026</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO SOBRE MIM -->
+    <section class="section" id="sobre">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Quem Sou Eu</span>
+          <h2 class="section-title">Construindo minha jornada na tecnologia</h2>
+          <p class="section-subtitle">Conheça um pouco da minha trajetória escolar, meus objetivos e curiosidades.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Apresentação Pessoal -->
+          <div class="about-card">
+            <h3 class="interest-title" style="margin-bottom: 1rem; font-size: 1.35rem;">Minha Apresentação</h3>
+            
+            <!-- [DICA PARA O ALUNO]: Altere os parágrafos abaixo com suas informações reais -->
+            <p class="about-text">
+              Sou estudante do Ensino Médio / Fundamental e estou dando meus primeiros passos no universo da programação. 
+              Este projeto foi criado especialmente para uma atividade escolar interdisciplinar, unindo lógica, criatividade e design digital.
+            </p>
+
+            <div class="about-highlight-box">
+              <strong>💡 Objetivo acadêmico:</strong> Aprender as bases sólidas da web (HTML, CSS e JavaScript) e criar interfaces que sejam bonitas e fáceis de usar por qualquer pessoa.
+            </div>
+
+            <p class="about-text">
+              Gosto de entender como as coisas funcionam por trás das telas e estou sempre disposto a superar desafios e aprender novas tecnologias.
+            </p>
+
+            <!-- Metadados / Informações rápidas -->
+            <div class="about-meta-list">
+              <div class="meta-item">
+                <div class="meta-label">Escola / Instituição</div>
+                <div class="meta-value">[Nome da Sua Escola]</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Série / Turma</div>
+                <div class="meta-value">[Sua Turma ou Ano]</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Disciplina</div>
+                <div class="meta-value">Tecnologia / Informática</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Localização</div>
+                <div class="meta-value">Brasil 🇧🇷</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Áreas de Interesse & Curiosidades -->
+          <div class="interests-grid">
+            
+            <div class="interest-item">
+              <div class="interest-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4"></path>
+                  <path d="m6 8-4 4 4 4"></path>
+                  <path d="m14.5 4-5 16"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="interest-title">Desenvolvimento Web</h4>
+                <p class="interest-desc">Interesse em criar páginas interativas, layouts responsivos e entender como os navegadores interpretam o código.</p>
+              </div>
+            </div>
+
+            <div class="interest-item">
+              <div class="interest-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20"></path>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="interest-title">Lógica e Resolução de Problemas</h4>
+                <p class="interest-desc">Gosto de desafios matemáticos, algoritmos, jogos de raciocínio e quebra-cabeças lógicos.</p>
+              </div>
+            </div>
+
+            <div class="interest-item">
+              <div class="interest-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m4.93 4.93 4.24 4.24"></path>
+                  <path d="m14.83 9.17 4.24-4.24"></path>
+                  <path d="m14.83 14.83 4.24 4.24"></path>
+                  <path d="m9.17 14.83-4.24 4.24"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4 class="interest-title">Ciência, Espaço & Inovação</h4>
+                <p class="interest-desc">Curiosidade contínua sobre inteligência artificial, exploração espacial, robótica e o impacto da tecnologia no futuro.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO HABILIDADES -->
+    <section class="section" id="habilidades" style="background: rgba(17, 24, 39, 0.25);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Meu Aprendizado</span>
+          <h2 class="section-title">Habilidades e Conhecimentos</h2>
+          <p class="section-subtitle">Tecnologias que estou estudando e competências desenvolvidas na escola.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Categoria 1: Linguagens Web -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Front-end Básico</h3>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>HTML5 Estrutural</span>
+                  <span class="skill-percent">Em evolução</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>CSS3 & Responsividade</span>
+                  <span class="skill-percent">Em evolução</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>JavaScript (Lógica & DOM)</span>
+                  <span class="skill-percent">Iniciante</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="skill-chip">Flexbox</span>
+              <span class="skill-chip">CSS Grid</span>
+              <span class="skill-chip">Eventos JS</span>
+              <span class="skill-chip">Semântica Web</span>
+            </div>
+          </div>
+
+          <!-- Categoria 2: Ferramentas -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Ferramentas & Estudo</h3>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>VS Code / Editores</span>
+                  <span class="skill-percent">Prática frequente</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Git & GitHub Básico</span>
+                  <span class="skill-percent">Aprendendo</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 65%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Design & Apresentações</span>
+                  <span class="skill-percent">Prática</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Figma / Canva</span>
+              <span class="skill-chip">DevTools</span>
+              <span class="skill-chip">Vercel</span>
+            </div>
+          </div>
+
+          <!-- Categoria 3: Habilidades Pessoais (Soft Skills) -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Competências Escolares</h3>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Trabalho em Equipe</span>
+                  <span class="skill-percent">Alto</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Curiosidade & Autonomia</span>
+                  <span class="skill-percent">Destaque</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Organização de Prazos</span>
+                  <span class="skill-percent">Em evolução</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="skill-chip">Comunicação</span>
+              <span class="skill-chip">Criatividade</span>
+              <span class="skill-chip">Resiliência</span>
+              <span class="skill-chip">Pontualidade</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Galeria de Trabalhos</span>
+          <h2 class="section-title">Meus Projetos & Experimentos</h2>
+          <p class="section-subtitle">Uma seleção de criações digitais para demonstrar o aprendizado prático.</p>
+        </div>
+
+        <!-- Banner Explicativo de Projetos Demonstrativos / Fictícios -->
+        <div class="disclaimer-banner">
+          <div class="disclaimer-icon">ℹ️</div>
+          <div class="disclaimer-text">
+            <strong>Aviso de Projeto Escolar:</strong> Os cartões abaixo são <em>exemplos demonstrativos fictícios</em> criados para cumprir os requisitos desta atividade escolar. Você pode facilmente substituir os textos, imagens e links pelos seus projetos reais futuros!
+          </div>
+        </div>
+
+        <!-- Filtros Interativos da Galeria -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
+          <button class="filter-btn" data-filter="web">Aplicações Web</button>
+          <button class="filter-btn" data-filter="escolar">Projetos Escolares</button>
+          <button class="filter-btn" data-filter="logica">Lógica & Jogos</button>
+        </div>
+
+        <!-- Grade de Cartões de Projetos -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Projeto 1: EduCalc (Fictício) -->
+          <article class="project-card" data-category="web escolar">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/projeto1.jpg" alt="Interface da Calculadora Escolar Inteligente" class="project-thumbnail" />
+              <span class="project-badge-fictional">Exemplo Demonstrativo</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EduCalc: Calculadora Inteligente</h3>
+              <p class="project-desc">
+                Ferramenta matemática desenvolvida para auxiliar colegas de classe no cálculo de fórmulas, equações e gráficos com interface visual limpa.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-secondary btn-sm open-modal-btn" data-project="calc">
+                  <span>Ver Detalhes</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2: AstroTech Blog (Fictício) -->
+          <article class="project-card" data-category="web escolar">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/projeto2.jpg" alt="Portal de Ciências e Tecnologia Escolar" class="project-thumbnail" />
+              <span class="project-badge-fictional">Exemplo Demonstrativo</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AstroTech: Portal de Ciências</h3>
+              <p class="project-desc">
+                Portal de artigos para a feira de ciências da escola, abordando novidades sobre robótica, exploração de Marte e astronomia moderna.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Design Responsivo</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Acessibilidade</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-secondary btn-sm open-modal-btn" data-project="blog">
+                  <span>Ver Detalhes</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3: QuizMania (Fictício) -->
+          <article class="project-card" data-category="logica web">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/projeto3.jpg" alt="Interface do Jogo de Quiz de Conhecimentos" class="project-thumbnail" />
+              <span class="project-badge-fictional">Exemplo Demonstrativo</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">QuizMania: Desafio Escolar</h3>
+              <p class="project-desc">
+                Jogo de perguntas e respostas gamificado para testar o aprendizado em história e ciências, com cronômetro de tempo e ranking de pontuação.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Lógica JS</span>
+                <span class="tech-tag">Manipulação DOM</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-secondary btn-sm open-modal-btn" data-project="quiz">
+                  <span>Ver Detalhes</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Fale Comigo</span>
+          <h2 class="section-title">Vamos conversar ou trocar ideias!</h2>
+          <p class="section-subtitle">Sinta-se à vontade para enviar um comentário sobre o trabalho ou conectar-se nas redes.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Canais de Contato e Redes Sociais -->
+          <div class="contact-info-panel">
+            <div>
+              <h3 class="contact-info-title">Canais de Contato</h3>
+              <p class="contact-info-desc">
+                Você pode conferir meus códigos, me seguir nas redes ou enviar uma mensagem direta pelo formulário ao lado.
+              </p>
+            </div>
+
+            <div class="contact-channels">
+              
+              <!-- GitHub -->
+              <!-- [DICA PARA O ALUNO]: Troque o link href="#" pelo seu perfil real no GitHub -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>GitHub</h4>
+                  <p>github.com/seuperfil (Repositórios)</p>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <!-- [DICA PARA O ALUNO]: Troque pelo seu LinkedIn se tiver -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/seuperfil (Conexões)</p>
+                </div>
+              </a>
+
+              <!-- E-mail Direto -->
+              <!-- [DICA PARA O ALUNO]: Troque pelo seu e-mail escolar ou pessoal -->
+              <a href="mailto:exemplo@escola.com" class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>E-mail</h4>
+                  <p>seu.email@escola.com</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Formulário com Validação -->
+          <div class="contact-form-card">
+            <form class="contact-form" id="contact-form" novalidate>
+              
+              <!-- Campo: Nome -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Seu Nome Completo *</label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Ex: Maria Silva" 
+                  required 
+                  aria-describedby="name-error"
+                />
+                <span class="form-error-msg" id="name-error">Por favor, preencha o seu nome (mínimo 3 caracteres).</span>
+              </div>
+
+              <!-- Campo: E-mail -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Seu Melhor E-mail *</label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="Ex: seuemail@exemplo.com" 
+                  required 
+                  aria-describedby="email-error"
+                />
+                <span class="form-error-msg" id="email-error">Informe um endereço de e-mail válido (ex: nome@dominio.com).</span>
+              </div>
+
+              <!-- Campo: Assunto -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Assunto da Mensagem *</label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="Ex: Feedback sobre o trabalho escolar" 
+                  required 
+                  aria-describedby="subject-error"
+                />
+                <span class="form-error-msg" id="subject-error">Por favor, informe o assunto da mensagem.</span>
+              </div>
+
+              <!-- Campo: Mensagem -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Sua Mensagem *</label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  placeholder="Escreva aqui seu recado, dúvida ou elogio..." 
+                  required 
+                  aria-describedby="message-error"
+                ></textarea>
+                <span class="form-error-msg" id="message-error">A mensagem não pode ficar vazia (mínimo 10 caracteres).</span>
+              </div>
+
+              <!-- Botão de Envio com Estado de Carregamento -->
+              <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;">
+                <span id="btn-text">Enviar Mensagem</span>
+                <svg id="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m22 2-7 20-4-9-9-4Z"></path>
+                  <path d="M22 2 11 13"></path>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       MODAL DE DETALHES DO PROJETO (POPUP INTERATIVO)
+       ===================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar janela de detalhes">✕</button>
+      <div class="modal-image-header">
+        <img id="modal-img" src="" alt="Capa do projeto em destaque" />
+      </div>
+      <div class="modal-content-body">
+        <span class="project-badge-fictional" style="position: static; display: inline-block; margin-bottom: 0.75rem;">Projeto Demonstrativo</span>
+        <h3 class="modal-title" id="modal-title">Título do Projeto</h3>
+        <p class="modal-desc" id="modal-desc">Descrição detalhada do projeto selecionado.</p>
+        
+        <div class="modal-features-list">
+          <h4>Recursos e Destaques:</h4>
+          <ul id="modal-features">
+            <!-- Itens inseridos dinamicamente via JS -->
+          </ul>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+          <button class="btn btn-primary btn-sm" id="modal-action-btn">
+            <span>Visitar Demonstração</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </button>
+          <button class="btn btn-secondary btn-sm" id="modal-secondary-btn">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast / Notificação Flutuante de Sucesso -->
+  <div class="toast-alert" id="toast-alert" role="alert" aria-live="polite">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toast-message">Mensagem enviada com sucesso!</span>
+  </div>
+
+  <!-- =====================================================================
+       RODAPÉ (FOOTER)
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <span class="logo-dot"></span>
+            <span>Dev<span class="text-gradient">Estudante</span>.</span>
+          </a>
+          <p>
+            Portfólio escolar autoral desenvolvido com HTML5, CSS3 moderno e JavaScript puro. 
+            Criado para fins educacionais e apresentação pedagógica.
+          </p>
+        </div>
+
+        <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Voltar ao topo da página" title="Voltar ao início">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <!-- [DICA PARA O ALUNO]: Altere o nome abaixo para o seu próprio nome -->
+        <p>© 2026 <strong>[Seu Nome Aqui]</strong> • Todos os direitos reservados.</p>
+        <p>Desenvolvido com carinho para o Trabalho Escolar de Programação ✨</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Principal com Todas as Funcionalidades Interativas -->
+  <script src="js/main.js"></script>
+</body>
+</html>
